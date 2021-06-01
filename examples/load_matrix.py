@@ -1,5 +1,10 @@
 import pandas as pd
 
-path_to_matrix = 'example.data'
-matrix = pd.read_csv(path_to_matrix, sep=' ', header=None)
-print(matrix)
+def load_matrix(path_to_matrix):
+    """ Load a score matrix.
+    
+        Args:
+          path_to_matrix: path to the `*.data` file.
+    """
+    matrix = pd.read_csv(path_to_matrix, sep=' ', header=None)
+    return matrix
